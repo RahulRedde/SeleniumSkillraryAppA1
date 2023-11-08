@@ -228,7 +228,7 @@ public class WebDriverUtility {
     	public void takeScreenshot(WebDriver driver, String className, JavaUtility jutil) {
     		TakesScreenshot ts = (TakesScreenshot) driver;
     		File src = ts.getScreenshotAs(OutputType.FILE);
-    		File dest = new File("./Screenshot" + className + "_" + jutil.getCurrentTime() + ".png");
+    		File dest = new File("./Screenshot/" + className + "_" + jutil.getCurrentTime() + ".png");
     		try {
     			FileUtils.copyFile(src, dest);
     		} catch (IOException e) {
