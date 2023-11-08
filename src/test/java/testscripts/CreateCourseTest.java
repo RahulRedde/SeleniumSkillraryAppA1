@@ -25,7 +25,7 @@ public class CreateCourseTest extends BaseClass {
 		Map<String, String> map = excel.readFromExcel("Sheet1", "Add Course");
 		String courseName = map.get("Name")+jutil.generateRandomNum(100);
 		addCourse.setName(courseName);
-		addCourse.selectcategory(webUtil, map.get("category"));
+		addCourse.selectcategory(webUtil, map.get("Category"));
 		addCourse.setPrice(map.get("Price"));
 		addCourse.uploadPhoto(map.get("Photo"));
 		
