@@ -10,6 +10,8 @@ import org.testng.asserts.SoftAssert;
 import genericLibraries.BaseClass;
 import genericLibraries.IConstantPath;
 
+//This test is not success
+
 public class CreateCourseTest extends BaseClass {
 
 	@Test
